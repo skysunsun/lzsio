@@ -637,6 +637,17 @@ img { max-width: 100%; }
 .footer-meta a { color: var(--muted); border-bottom: 1px solid var(--rule-strong); }
 .footer-meta a:hover { color: var(--seal); }
 
+/* ===== 关于页 ===== */
+.about-lede {
+  margin: 0 0 2.4em;
+  font-family: var(--serif);
+  font-size: clamp(21px, 2.6vw, 27px);
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  text-align: left;
+}
+
 /* ===== 公众号二维码 ===== */
 .qr-block {
   margin: 2.6em 0 1em;
