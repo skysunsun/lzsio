@@ -1,6 +1,9 @@
 <header class="site-header">
   <div class="container header-inner">
-    <a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    <a class="brand" href="{{ .Site.BaseURL }}">
+      <span class="brand-seal">历</span>
+      <span class="brand-name">{{ .Site.Title }}<span class="brand-sub">THE WAY BACK</span></span>
+    </a>
     <nav class="site-nav">
       {{ range .Site.Menus.main }}
         <a href="{{ .URL | relURL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>

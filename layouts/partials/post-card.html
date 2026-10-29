@@ -1,9 +1,14 @@
-<article class="post-card">
-  <div class="post-card-meta">
-    <span class="cat cat-{{ .Section }}">{{ index (dict "rhyme" "韵" "laishilu" "来时路") .Section }}</span>
-    <time>{{ .Date.Format "2006-01-02" }}</time>
+{{ $p := .p }}
+{{ $i := .i }}
+<article class="post-row">
+  <div class="row-idx">{{ printf "%02d" (add $i 1) }}</div>
+  <div class="row-body">
+    <div class="row-meta">
+      <span class="seal-tag seal-{{ $p.Section }}">{{ index (dict "huanfulai" "还复来" "laishilu" "来时路") $p.Section }}</span>
+      <time>{{ $p.Date.Format "2006.01.02" }}</time>
+      <span>{{ $p.ReadingTime }} 分钟</span>
+    </div>
+    <h3 class="row-title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
+    <p class="row-summary">{{ $p.Summary | plainify | truncate 130 }}</p>
   </div>
-  <h3 class="post-card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-  <p class="post-summary">{{ .Summary | plainify | truncate 140 }}</p>
-  <a class="read-more" href="{{ .RelPermalink }}">阅读全文 →</a>
 </article>

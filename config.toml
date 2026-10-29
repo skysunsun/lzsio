@@ -29,8 +29,8 @@ enableEmoji = true
 # ===== 顶部导航菜单 =====
 [menu]
   [[menu.main]]
-    name = "韵"
-    url = "/rhyme/"
+    name = "还复来"
+    url = "/huanfulai/"
     weight = 1
   [[menu.main]]
     name = "来时路"

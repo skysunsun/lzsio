@@ -1,14 +1,46 @@
 {{ define "main" }}
-<section class="hero">
+{{ $huanfulai := where .Site.RegularPages "Section" "huanfulai" }}
+{{ $laishilu := where .Site.RegularPages "Section" "laishilu" }}
+{{ $pages := where .Site.RegularPages "Section" "in" (slice "huanfulai" "laishilu") }}
+
+<section class="cover">
+  <p class="kicker">EST. 2026 · 记录反复出现的规律</p>
   <h1>{{ .Site.Title }}</h1>
-  <p class="lead">{{ .Site.Params.description }}</p>
+  <p class="lead">历史不会重演，但总会有惊人的相似。</p>
+  <div class="cover-meta">
+    <span>还复来 {{ len $huanfulai }} 篇</span>
+    <span>来时路 {{ len $laishilu }} 篇</span>
+    <span>持续更新</span>
+  </div>
 </section>
 
-<h2 class="section-title">最新文章</h2>
-<div class="post-list">
-  {{ $pages := where .Site.RegularPages "Section" "in" (slice "rhyme" "laishilu") }}
-  {{ range first 12 (sort $pages "Date" "desc") }}
-    {{ partial "post-card.html" . }}
-  {{ end }}
-</div>
+<section class="sections">
+  <a class="section-card" href="{{ "/huanfulai/" | relURL }}">
+    <p class="sec-kicker">COLUMN 01 · COME BACK AGAIN</p>
+    <h2>还复来</h2>
+    <p>今天发生了什么，历史上相似的那一次，它后来怎么收场，又能给今天什么启示。</p>
+    <span class="sec-count">{{ len $huanfulai }} 篇 · 阅读 →</span>
+  </a>
+  <a class="section-card" href="{{ "/laishilu/" | relURL }}">
+    <p class="sec-kicker">COLUMN 02 · THE WAY BACK</p>
+    <h2>来时路</h2>
+    <p>记录反复被验证过的工具与套路。走过的路记下来，后面好认路。</p>
+    <span class="sec-count">{{ len $laishilu }} 篇 · 阅读 →</span>
+  </a>
+</section>
+
+<section class="list-block">
+  <div class="block-head">
+    <h2>最新</h2>
+    <span>LATEST · 共 {{ len $pages }} 篇</span>
+  </div>
+  <div class="post-list">
+    {{ range $i, $p := first 12 (sort $pages "Date" "desc") }}
+      {{ partial "post-card.html" (dict "p" $p "i" $i) }}
+    {{ end }}
+    {{ if eq (len $pages) 0 }}
+      <p class="row-summary" style="padding:28px 0;">还没有文章。第一篇还在路上。</p>
+    {{ end }}
+  </div>
+</section>
 {{ end }}
