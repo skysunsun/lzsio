@@ -14,7 +14,8 @@
 <meta property="og:site_name" content="{{ .Site.Title }}">
 <meta name="twitter:card" content="summary">
 
-<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+{{ $css := resources.Get "css/style.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
 {{ if .Params.math }}
 <!-- KaTeX：仅当文章 front matter 里写 math: true 时才加载 -->
