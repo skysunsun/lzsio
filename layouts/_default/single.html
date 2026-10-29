@@ -1,5 +1,6 @@
 {{ define "main" }}
-<article class="post">
+<article class="post{{ if .Params.center }} post-center{{ end }}">
+  {{ if not .Params.hideTitle }}
   <header class="post-head">
     {{ if .Section }}
     <div class="post-meta-top">
@@ -12,6 +13,7 @@
     {{ with .Description }}<p class="post-dek">{{ . }}</p>{{ end }}
     {{ with .Params.tags }}<div class="post-tags">{{ range . }}<span class="tag">{{ . }}</span>{{ end }}</div>{{ end }}
   </header>
+  {{ end }}
 
   {{ if gt (len .TableOfContents) 120 }}
   <aside class="toc">

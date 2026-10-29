@@ -3,6 +3,7 @@
    ========================================================= */
 
 :root {
+  color-scheme: light;
   --paper: #f6f3ec;
   --paper-2: #fbf9f4;
   --ink: #1a1814;
@@ -23,18 +24,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #14130f;
-    --paper-2: #1b1a15;
-    --ink: #ece6d8;
-    --ink-soft: #cdc6b6;
-    --muted: #978f7e;
-    --rule: #2e2b24;
-    --rule-strong: #454136;
-    --seal: #d4685c;
-    --huanfulai: #7fb59c;
-    --laishilu: #8fb2d8;
-  }
+  /* 本站固定为暖纸浅色版面，不跟随系统深色模式 */
 }
 
 * { box-sizing: border-box; }
@@ -642,14 +632,18 @@ img { max-width: 100%; }
 .footer-meta a:hover { color: var(--seal); }
 
 /* ===== 关于页 ===== */
-.about-lede {
-  margin: 0 0 2.4em;
+.post-center { padding-top: 96px; }
+
+.post-center .post-content { text-align: center; }
+
+.post-center .about-lede {
+  margin: 0 0 2.6em;
   font-family: var(--serif);
   font-size: clamp(21px, 2.6vw, 27px);
   line-height: 1.9;
   letter-spacing: 0.04em;
   color: var(--ink);
-  text-align: left;
+  text-align: center;
 }
 
 /* ===== 公众号二维码 ===== */
