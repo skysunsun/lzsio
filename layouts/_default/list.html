@@ -1,12 +1,5 @@
 {{ define "main" }}
-<header class="list-head">
-  <p class="kicker">{{ index (dict "huanfulai" "COME BACK AGAIN · 还复来" "laishilu" "THE WAY BACK · 来时路") .Section }}</p>
-  <h1>{{ .Title }}</h1>
-  {{ with .Content }}<div class="list-intro">{{ . }}</div>{{ end }}
-  <p class="list-count">共 {{ len .Pages }} 篇</p>
-</header>
-
-<div class="post-list" style="margin-top:8px;">
+<div class="post-list list-page">
   {{ range $i, $p := .Paginator.Pages }}
     {{ partial "post-card.html" (dict "p" $p "i" $i) }}
   {{ end }}
