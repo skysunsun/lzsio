@@ -69,8 +69,18 @@ img { max-width: 100%; }
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   height: 64px;
+}
+
+.brand { display: flex; align-items: center; }
+
+.brand-name {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--ink);
 }
 
 .site-nav { display: flex; align-items: center; gap: 26px; }
@@ -92,27 +102,19 @@ img { max-width: 100%; }
 
 /* ===== 封面 ===== */
 .cover {
-  padding: 84px 0 52px;
+  padding: 76px 0 52px;
   border-bottom: 2px solid var(--ink);
   text-align: center;
 }
 
-.cover h1 {
-  margin: 0;
-  font-family: var(--serif);
-  font-size: clamp(46px, 8vw, 88px);
-  font-weight: 700;
-  line-height: 1.02;
-  letter-spacing: 0.08em;
-}
-
 .cover .lead {
-  margin: 24px auto 0;
-  max-width: 30em;
+  margin: 0 auto;
+  max-width: 26em;
   font-family: var(--serif);
-  font-size: 17px;
-  line-height: 2;
-  color: var(--ink-soft);
+  font-size: clamp(18px, 2.2vw, 22px);
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+  color: var(--ink);
 }
 
 .cover .cover-meta {
@@ -650,6 +652,7 @@ img { max-width: 100%; }
 @media (max-width: 760px) {
   .container { padding: 0 20px; }
   .header-inner { height: 56px; }
+  .brand-name { font-size: 17px; letter-spacing: 0.12em; }
   .site-nav { gap: 16px; }
   .site-nav a { font-size: 12px; letter-spacing: 0.12em; }
 
