@@ -69,22 +69,8 @@ img { max-width: 100%; }
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 68px;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-}
-
-.brand-name {
-  font-family: var(--serif);
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: 0.18em;
-  color: var(--ink);
+  justify-content: flex-end;
+  height: 64px;
 }
 
 .site-nav { display: flex; align-items: center; gap: 26px; }
@@ -671,8 +657,7 @@ img { max-width: 100%; }
 /* ===== 响应式 ===== */
 @media (max-width: 760px) {
   .container { padding: 0 20px; }
-  .header-inner { height: 60px; }
-  .brand-name { font-size: 18px; letter-spacing: 0.12em; }
+  .header-inner { height: 56px; }
   .site-nav { gap: 16px; }
   .site-nav a { font-size: 12px; letter-spacing: 0.12em; }
 
