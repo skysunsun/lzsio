@@ -94,25 +94,12 @@ img { max-width: 100%; }
 }
 
 .brand-name {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   font-family: var(--serif);
   font-size: 21px;
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: 0.18em;
   color: var(--ink);
-}
-
-.brand-sub {
-  display: block;
-  font-family: var(--sans);
-  font-size: 10px;
-  letter-spacing: 0.28em;
-  color: var(--muted);
-  font-weight: 400;
-  margin-top: 1px;
 }
 
 .site-nav { display: flex; align-items: center; gap: 26px; }
@@ -708,7 +695,6 @@ img { max-width: 100%; }
   .container { padding: 0 20px; }
   .header-inner { height: 60px; }
   .brand-name { font-size: 18px; letter-spacing: 0.12em; }
-  .brand-sub { display: none; }
   .site-nav { gap: 16px; }
   .site-nav a { font-size: 12px; letter-spacing: 0.12em; }
 
