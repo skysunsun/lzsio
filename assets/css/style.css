@@ -590,17 +590,9 @@ img { max-width: 100%; }
 .footer-inner {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
-}
-
-.footer-motto {
-  margin: 0;
-  font-family: var(--serif);
-  font-size: 14px;
-  letter-spacing: 0.08em;
-  color: var(--ink-soft);
 }
 
 .footer-meta {
@@ -681,6 +673,5 @@ img { max-width: 100%; }
   .post-nav { grid-template-columns: 1fr; }
   .post-nav .next { text-align: left; }
 
-  .footer-inner { display: block; }
-  .footer-meta { margin-top: 10px; }
+  .footer-inner { justify-content: center; text-align: center; }
 }
