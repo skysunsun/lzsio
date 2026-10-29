@@ -3,6 +3,7 @@
    ========================================================= */
 
 :root {
+  color-scheme: light;
   --paper: #f6f3ec;
   --paper-2: #fbf9f4;
   --ink: #1a1814;
@@ -23,18 +24,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #14130f;
-    --paper-2: #1b1a15;
-    --ink: #ece6d8;
-    --ink-soft: #cdc6b6;
-    --muted: #978f7e;
-    --rule: #2e2b24;
-    --rule-strong: #454136;
-    --seal: #d4685c;
-    --huanfulai: #7fb59c;
-    --laishilu: #8fb2d8;
-  }
+  /* 本站固定暖纸浅色，不跟随系统深色模式（Edge 深色主题会整站变黑） */
 }
 
 * { box-sizing: border-box; }
