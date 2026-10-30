@@ -392,6 +392,31 @@ img { max-width: 100%; }
 .post-content th { font-weight: 700; color: var(--ink); border-bottom: 1.5px solid var(--ink); }
 .post-content tbody tr:nth-child(even) td { background: var(--paper-2); }
 
+/* 同系列内链 */
+.related {
+  margin-top: 56px;
+  padding-top: 22px;
+  border-top: 1px solid var(--rule);
+}
+
+.related-label {
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.related a {
+  display: block;
+  padding: 6px 0;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.related a:hover { color: var(--seal); }
+
 /* 上下篇 */
 .post-nav {
   display: grid;

@@ -9,6 +9,18 @@ baseURL = "https://lzsio.com/"
 title = "历总似"
 paginate = 8
 enableEmoji = true
+enableRobotsTXT = false
+timeZone = "Asia/Shanghai"
+
+# ===== 相关文章（用于文末内链）=====
+[related]
+  threshold = 20
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "date"
+    weight = 10
 
 # ===== 自定义参数（在模板里通过 .Site.Params 读取）=====
 [params]
