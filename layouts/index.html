@@ -2,10 +2,6 @@
 {{ $pages := where .Site.RegularPages "Params.excludeFromHome" "!=" true }}
 
 <section class="list-block">
-  <div class="block-head">
-    <h2>文章</h2>
-    <span>共 {{ len $pages }} 篇</span>
-  </div>
   <div class="post-list">
     {{ range $i, $p := first 24 (sort $pages "Date" "desc") }}
       {{ partial "post-card.html" (dict "p" $p "i" $i) }}
