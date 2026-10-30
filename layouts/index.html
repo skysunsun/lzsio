@@ -1,13 +1,6 @@
 {{ define "main" }}
 {{ $pages := where .Site.RegularPages "Params.excludeFromHome" "!=" true }}
 
-<section class="cover">
-  <p class="lead">历史不会重演，但总会有惊人的相似。</p>
-  <div class="cover-meta">
-    <span>共 {{ len $pages }} 篇</span>
-  </div>
-</section>
-
 <section class="list-block">
   <div class="block-head">
     <h2>文章</h2>
