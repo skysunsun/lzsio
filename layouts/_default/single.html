@@ -12,13 +12,6 @@
   </header>
   {{ end }}
 
-  {{ if gt (len .TableOfContents) 120 }}
-  <aside class="toc">
-    <p class="toc-label">本文要目</p>
-    {{ .TableOfContents }}
-  </aside>
-  {{ end }}
-
   <div class="post-content">
     {{ .Content }}
   </div>
