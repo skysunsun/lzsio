@@ -3,6 +3,8 @@ title: "MEXC 全球卡开卡教程：申请条件、充值激活与返现规则�
 date: 2026-10-30
 description: "MEXC Global Card 的申请条件、完整开卡流程、费用与返现分级，含邀请码 4B6gv，以及最容易踩的地址证明坑。"
 tags: ["加密货币", "交易所", "教程", "MEXC"]
+aliases:
+  - "/laishilu/mexc-card-guide/"
 ---
 
 MEXC 全球卡（MEXC Global Card）是一张 Visa 加密资产借记卡：卡里放 USDT，消费时自动按当地法币结算。

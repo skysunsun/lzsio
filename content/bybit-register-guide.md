@@ -3,6 +3,8 @@ title: "Bybit 注册教程（台湾地区）：邀请码 ZXNYG53 与台区卡开
 date: 2026-10-30
 description: "从注册、KYC 到开通台湾地区 Bybit 卡的一条线流程，含邀请码 ZXNYG53、美元账户、入金路径与常见问题。"
 tags: ["加密货币", "交易所", "教程", "Bybit"]
+aliases:
+  - "/laishilu/bybit-register-guide/"
 ---
 
 Bybit 注册本身不复杂，卡住新用户的是三件事：网络环境、实名认证，以及各种「捷径」传言。

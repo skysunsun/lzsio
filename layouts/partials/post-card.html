@@ -4,7 +4,6 @@
   <div class="row-idx">{{ printf "%02d" (add $i 1) }}</div>
   <div class="row-body">
     <div class="row-meta">
-      <span class="seal-tag seal-{{ $p.Section }}">{{ index (dict "huanfulai" "还复来" "laishilu" "来时路") $p.Section }}</span>
       <time>{{ $p.Date.Format "2006.01.02" }}</time>
       <span>{{ $p.ReadingTime }} 分钟</span>
     </div>

@@ -4,6 +4,8 @@ date: 2026-08-30
 draft: false
 tags: ["免费域名", "部署"]
 math: false
+aliases:
+  - "/laishilu/digitalplat-free-domain/"
 ---
 
 ## 服务简介

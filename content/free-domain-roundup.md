@@ -4,6 +4,8 @@ date: 2026-08-30
 draft: false
 tags: ["免费域名", "域名申请"]
 math: false
+aliases:
+  - "/laishilu/free-domain-roundup/"
 ---
 
 之前写了三篇带邀请链接的详细教程（[DigitalPlat 的 qzz.io/dpdns.org](/tech/digitalplat-free-domain/)、[kdns.fr](/tech/kdns-fr/)、[pp.ua](/tech/pp-ua/)）。这篇把其余 9 个免费域名 / 子域名平台做个**汇总对比**，方便一眼挑。各平台都已联网核实 2026 年当前状态。

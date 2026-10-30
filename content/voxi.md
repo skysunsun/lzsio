@@ -4,6 +4,8 @@ date: 2026-08-30
 draft: false
 tags: ["VOXI", "英国手机卡", "邀请"]
 math: false
+aliases:
+  - "/laishilu/voxi/"
 ---
 
 ## 服务简介

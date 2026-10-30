@@ -4,6 +4,8 @@ date: 2026-09-14
 draft: false
 tags: ["ChatGPT", "GateCard", "省钱"]
 math: false
+aliases:
+  - "/laishilu/chatgpt-gatecard/"
 ---
 
 Plus 月费 $20，一年就是 $240。但 8–9 月 GateCard 的「AI 订阅返现」活动，首充订阅直接返 50%，等于把 Plus 打到 $10/月。全程用国内资料、免费开卡，不用礼品卡、不用找代充。

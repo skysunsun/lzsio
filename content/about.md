@@ -3,6 +3,7 @@ title: "关于"
 date: 2026-09-25
 hideTitle: true
 center: true
+excludeFromHome: true
 ---
 
 <p class="about-lede">以史为鉴，让每一次“似曾相识”都变成一次清醒。</p>

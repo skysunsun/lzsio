@@ -2,13 +2,10 @@
 <article class="post{{ if .Params.center }} post-center{{ end }}">
   {{ if not .Params.hideTitle }}
   <header class="post-head">
-    {{ if .Section }}
     <div class="post-meta-top">
-      <span class="seal-tag seal-{{ .Section }}">{{ index (dict "huanfulai" "还复来" "laishilu" "来时路") .Section }}</span>
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年01月02日" }}</time>
       <span>{{ .ReadingTime }} 分钟阅读</span>
     </div>
-    {{ end }}
     <h1 class="post-title">{{ .Title }}</h1>
     {{ with .Description }}<p class="post-dek">{{ . }}</p>{{ end }}
     {{ with .Params.tags }}<div class="post-tags">{{ range . }}<span class="tag">{{ . }}</span>{{ end }}</div>{{ end }}

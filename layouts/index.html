@@ -1,24 +1,20 @@
 {{ define "main" }}
-{{ $huanfulai := where .Site.RegularPages "Section" "huanfulai" }}
-{{ $laishilu := where .Site.RegularPages "Section" "laishilu" }}
-{{ $pages := where .Site.RegularPages "Section" "in" (slice "huanfulai" "laishilu") }}
+{{ $pages := where .Site.RegularPages "Params.excludeFromHome" "!=" true }}
 
 <section class="cover">
   <p class="lead">历史不会重演，但总会有惊人的相似。</p>
   <div class="cover-meta">
-    <span>还复来 {{ len $huanfulai }} 篇</span>
-    <span>来时路 {{ len $laishilu }} 篇</span>
-    <span>持续更新</span>
+    <span>共 {{ len $pages }} 篇</span>
   </div>
 </section>
 
 <section class="list-block">
   <div class="block-head">
-    <h2>最新</h2>
-    <span>LATEST · 共 {{ len $pages }} 篇</span>
+    <h2>文章</h2>
+    <span>共 {{ len $pages }} 篇</span>
   </div>
   <div class="post-list">
-    {{ range $i, $p := first 12 (sort $pages "Date" "desc") }}
+    {{ range $i, $p := first 24 (sort $pages "Date" "desc") }}
       {{ partial "post-card.html" (dict "p" $p "i" $i) }}
     {{ end }}
     {{ if eq (len $pages) 0 }}
