@@ -3,6 +3,7 @@ title: "关于"
 date: 2026-09-25
 hideTitle: true
 center: true
+hideNav: true
 excludeFromHome: true
 ---
 

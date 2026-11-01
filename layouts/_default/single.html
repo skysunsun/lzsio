@@ -16,6 +16,7 @@
     {{ .Content }}
   </div>
 
+  {{ if not .Params.hideNav }}
   {{ $related := where (.Site.RegularPages.Related .) "Params.excludeFromHome" "!=" true }}
   {{ with first 3 $related }}
   <aside class="related">
@@ -38,5 +39,6 @@
       </a>
     {{ end }}
   </nav>
+  {{ end }}
 </article>
 {{ end }}
