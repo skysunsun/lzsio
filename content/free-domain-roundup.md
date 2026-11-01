@@ -62,6 +62,3 @@ Netlify 免费档免信用卡（主流资料与官方注册流程均未要求绑
 
 Render 免费档无需信用卡（GitHub/GitLab/Google 直登即可），部署后分配 `*.onrender.com` 子域名，可部署真实后端 Web 服务、静态站及 PostgreSQL。注册地址 render.com，建服务时选 Static Site / Web Service 并在实例类型里挑 Free 即可，支持 Node.js、Python、Go、Ruby、Rust、Docker 等。免费额度含每月 750 实例小时、100GB 带宽、500 构建分钟、512MB 内存/0.1 CPU；静态站永久免费且常驻，商业用途允许，并可选部署区域。最大坑是免费 Web 服务空闲 15 分钟后自动休眠，下次访问需 30–60 秒冷启动（约 1 分钟），对公开访问体验不佳；免费 PostgreSQL 仅保留 30 天、之后 14 天宽限期即删数据；本地文件系统临时、重启即丢。适合 API/全栈原型、内部工具、Demo 与静态站，需常驻低延迟则升级 Basic（$6–7/月）关闭休眠。
 
----
-
-> 带邀请链接、已单独详写的 3 篇：[DigitalPlat（qzz.io / dpdns.org）](/tech/digitalplat-free-domain/) · [kdns.fr](/tech/kdns-fr/) · [pp.ua](/tech/pp-ua/)。

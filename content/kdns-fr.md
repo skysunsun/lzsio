@@ -55,9 +55,3 @@ aliases:
 - **每账号上限 2 个**，无加量入口，别指望无限开。
 - **前缀至少 3 位**，太短或常见词易占用，备几个备选。
 - **稳定性**：依赖 KataBump 运营，免费无 SLA，重要业务建议备一个付费域名兜底。
-
-## 参考链接
-
-- 邀请注册链接：<https://rl.katabump.fr/4cd747>
-- KataBump 免费域名官方页：<https://katabump.com/en/free-domain>
-- 注册后台：<https://dashboard.katabump.com>

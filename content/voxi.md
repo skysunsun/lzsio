@@ -1,5 +1,5 @@
 ---
-title: "VOXI 英国手机卡申请教程（含邀请链接，双方各得礼品卡）"
+title: "VOXI 英国手机卡申请教程"
 date: 2026-08-30
 draft: false
 tags: ["VOXI", "英国手机卡", "邀请"]
@@ -16,7 +16,7 @@ VOXI 是 **Vodafone 旗下**的英国虚拟运营商（MVNO），主打"社交�
 
 
 
-## 逐步骤申请流程（带邀请链接）
+## 逐步骤申请流程
 
 通过邀请链接下单：<https://join.voxi.co.uk/QMnN7n>
 
